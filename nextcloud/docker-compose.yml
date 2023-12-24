@@ -1,7 +1,7 @@
 version: '3'
 services:
   nextcloud:
-    image: nextcloud
+    image: nextcloud:latest
     restart: always
     ports:
       - 8008:80
