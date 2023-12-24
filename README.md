@@ -14,10 +14,13 @@
 ## Domäne
 dc=bbs1,dc=local
 FQDN: dc.local
-|benutzer|password|
-|--------|--------|
-|admin   |admin   |
-|koerd   |koerd   |
+|benutzer |password |server   |
+|---------|---------|---------|
+|admin    |admin    |ldap     |
+|koerd    |koerd    |ldap     |
+|admin    |admin    |nextcloud|
+|root     |root     |mariadb  |
+|nextcloud|nextcloud|mariadb  |
 
 ## Ports
 ### openldap
