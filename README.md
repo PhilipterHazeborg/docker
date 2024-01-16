@@ -1,3 +1,5 @@
+[quick-start](https://cloud.philipterhazeborg.de/s/ZSJ5PKEdfza7zSs)
+
 ## TODO
 - [x] mariaDB
 - [x] adminer
