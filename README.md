@@ -7,20 +7,21 @@
 - [x] nextcloud
     - [x] ldap-Zugriff
     - [x] redis
-- [ ] moodle
-    - [ ] ldap-Zugriff
-    - [ ] redis
+- [x] moodle
+    - [x] ldap-Zugriff
+    - [x] redis
 
 ## Domäne
 dc=bbs1,dc=local
 FQDN: dc.local
-|benutzer |password |server   |
-|---------|---------|---------|
-|admin    |admin    |ldap     |
-|koerd    |koerd    |ldap     |
-|admin    |admin    |nextcloud|
-|root     |root     |mariadb  |
-|nextcloud|nextcloud|mariadb  |
+|benutzer       |password   |server     |
+|---------------|-----------|-----------|
+|admin          |admin      |ldap       |
+|nxcAdmin       |admin      |nextcloud  |
+|root           |root       |mariadb    |
+|nextcloud      |nextcloud  |mariadb    |
+|moodle         |moodle     |mariadb    |
+|redis          |redis      |redis      |
 
 ## Ports
 ### openldap
@@ -39,6 +40,12 @@ FQDN: mariadb
 |external|internal|
 |--------|--------|
 |3306    |3306    |
+
+### phpmyadmin
+FQDN: phpmyadmin
+|external|internal|
+|--------|--------|
+|8081    |80      |
 
 ### moodle
 FQDN: moodle

@@ -1,14 +1,19 @@
 version: '3'
 services:
   moodle:
-    image: bitnami/moodle:latest
+    image: bitnami/moodle:4.3.2
     environment:
       - EXTRA_LOCALES=fr_FR.UTF-8 UTF-8, de_DE.UTF-8 UTF-8, it_IT.UTF-8 UTF-8, es_ES.UTF-8 UTF-8
+      - MOODLE_LANG=de
       - MOODLE_DATABASE_HOST=db
       - MOODLE_DATABASE_PORT_NUMBER=3306
       - MOODLE_DATABASE_NAME=moodle
-      - MOODLE_DATABASE_USER=moodle_user
+      - MOODLE_DATABASE_USER=moodle
       - MOODLE_DATABASE_PASSWORD=moodle
+      # Moodle startet hiermit nicht!
+      #- MOODLE_USERNAME=mAdmin
+      #- MOODLE_PASSWORD=admin
+      - MOODLE_SITE_NAME=BBS I Leer
       - PHP_ENABLE_OPCACHE=true
       - PHP_MEMORY_LIMI=512M
     ports:
