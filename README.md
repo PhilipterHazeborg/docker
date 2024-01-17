@@ -24,6 +24,7 @@ FQDN: dc.local
 |nextcloud      |nextcloud  |mariadb    |
 |moodle         |moodle     |mariadb    |
 |redis          |redis      |redis      |
+|user           |bitnami    |moodle     |
 
 ## Ports
 ### openldap
