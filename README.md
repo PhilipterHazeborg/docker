@@ -11,7 +11,6 @@
     - [x] redis
 - [x] moodle
     - [x] ldap-Zugriff
-    - [x] redis
 
 ## Domäne
 dc=bbs1,dc=local
