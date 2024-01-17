@@ -3,7 +3,7 @@ services:
   moodle:
     image: bitnami/moodle:4.3.2
     environment:
-      - EXTRA_LOCALES=fr_FR.UTF-8 UTF-8, de_DE.UTF-8 UTF-8, it_IT.UTF-8 UTF-8, es_ES.UTF-8 UTF-8
+      - EXTRA_LOCALES=de_DE.UTF-8 UTF-8
       - MOODLE_LANG=de
       - MOODLE_DATABASE_HOST=db
       - MOODLE_DATABASE_PORT_NUMBER=3306
