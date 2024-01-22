@@ -11,7 +11,6 @@
     - [x] redis
 - [x] moodle
     - [x] ldap-Zugriff
-    - [x] redis
 
 ## Domäne
 dc=bbs1,dc=local
@@ -24,6 +23,7 @@ FQDN: dc.local
 |nextcloud      |nextcloud  |mariadb    |
 |moodle         |moodle     |mariadb    |
 |redis          |redis      |redis      |
+|user           |bitnami    |moodle     |
 
 ## Ports
 ### openldap
