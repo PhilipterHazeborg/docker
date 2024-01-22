@@ -1,7 +1,7 @@
 version: '2'
 services:
   openldap:
-    image: osixia/openldap:latest
+    image: osixia/openldap:stable
     container_name: openldap
     environment:
       LDAP_LOG_LEVEL: "256"

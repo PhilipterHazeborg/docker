@@ -1,7 +1,7 @@
 version: '2'
 services:
   phpldapadmin:
-    image: osixia/phpldapadmin:latest
+    image: osixia/phpldapadmin:stable
     container_name: phpldapadmin
     environment:
       PHPLDAPADMIN_LDAP_HOSTS: "dc.local"
